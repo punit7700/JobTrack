@@ -62,6 +62,7 @@ const registerUser = async (req, res) => {
 
 const loginUser = async (req, res) => {
     try {
+        console.log("LOGIN CONTROLLER HIT");
         const { email, password } = req.body;
 
         // Check required fields
@@ -72,9 +73,11 @@ const loginUser = async (req, res) => {
             });
         }
 
+        console.log("BEFORE USER FIND");
         // Find user
         const user = await User.findOne({ email });
 
+        console.log("AFTER USER FIND");
         if (!user) {
             return res.status(401).json({
                 success: false,
