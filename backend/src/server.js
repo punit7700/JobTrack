@@ -24,7 +24,6 @@ app.get("/", (req, res) => {
         success: true,
         message: "JobTrack API is running"
     });
-    res.redirect("/login")
 });
 
 app.get("/api/protected", protect, (req, res) => {
