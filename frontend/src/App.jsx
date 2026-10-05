@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route, Navigate, Link } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./Components/Navbar";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
-import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./Components/ProtectedRoute";
 import AddJob from "./pages/AddJob";
 import Jobs from "./pages/Jobs";
 import JobDetails from "./pages/JobDetails";
