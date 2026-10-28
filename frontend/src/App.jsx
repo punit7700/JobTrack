@@ -9,6 +9,7 @@ import Jobs from "./pages/Jobs";
 import JobDetails from "./pages/JobDetails";
 import EditJob from "./pages/EditJob";
 import Profile from "./pages/Profile";
+import Home from "./pages/Home";
 
 
 const ProtectedLayout = ({ children }) => {
@@ -36,7 +37,7 @@ function App() {
 
             <Routes>
 
-                <Route path="/" element={<Navigate to="/login" replace />} />
+                <Route path="/" element={<Home />} />
                 
                 <Route
                     path="/register"
